@@ -229,7 +229,7 @@ Merge Conflicts are an event that occurs when Git is unable to automatically res
     - A: Yes. Because Javascript is compiled "just in time", if it finds an error during its creation phase, it will halt the creation phase and throw an error. 
 
 - Q: What type is user input?
-    - A: User input always comes in as a string.
+    - A: A: User input always comes in as a string. However, this string may not be in the format you expect. If you are unsure of what you will receive, you can always sanitize your input via the .toString() method OR the parseInt() function.
 
 - Q: Will my commit ever overwrite another commit?
     - A: No. Commits have what is called a "hash", a unique ID. 
